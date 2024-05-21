@@ -17,7 +17,7 @@
 /* Corpo do documento */
 body {
     background-color: #FEF5E7;
-    height: 100vh;
+    height: 80px;
 }
 
 /* Efeitos de gradiente superior */
@@ -412,3 +412,190 @@ body {
 button:hover {
     background-color: #45a049;
 }
+
+
+
+/*parte do faq*/
+
+.wrapper {
+    max-width: 75%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+  .wrapper > p,
+  .wrapper > h1 {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  
+  .wrapper > h1 {
+    letter-spacing: 3px;
+  }
+  
+  .accordion {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .accordion i {
+    font-size: 1.6rem;
+  }
+  
+  .accordion.active,
+  .accordion:hover {
+    background-color: #f1f7f5;
+  }
+  
+  .pannel {
+    padding: 0 2rem 2.5rem 2rem;
+    background-color: #f1f7f5;
+    overflow: hidden;
+    display: none;
+  }
+  
+  .pannel.active {
+    display: block; /* Alterando a propriedade de exibição apenas para os painéis ativos */
+  }
+  
+  .pannel p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  
+  .faq {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+  }
+  
+  .faq.active {
+    border: none;
+  }
+  
+
+  /* contato */
+  .Contact {
+    display: grid;
+    height: 100px; /* Alterado para 100% da altura da janela de visualização */
+    place-items: center;
+    text-align: center;
+    background: #FEF5E7;
+  }
+  
+  .container-contact {
+    position: relative;
+    width: 700px; /* Aumentado para 600px */
+    min-height: 500px; /* Adicionado para garantir que haja espaço suficiente */
+    background: #254670;
+    padding: 50px; /* Aumentado para 40px */
+    border: 2px solid #444; /* Aumentado para 2px */
+    border-radius: 10px; /* Aumentado para 10px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .text {
+    font-size: 30px; /* Aumentado para 30px */
+    color: #000000;
+    font-weight: 600; /* Aumentado para 600 */
+  }
+  
+  .edit {
+    position: absolute;
+    right: 20px; /* Aumentado para 20px */
+    top: 10px; /* Aumentado para 10px */
+    font-size: 18px; /* Aumentado para 18px */
+    color: #666;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+  .edit:hover {
+    text-decoration: underline;
+  }
+  
+  .star-widget {
+    display: flex;
+    justify-content: center; /* Para centralizar os botões */
+  }
+
+  .star-widget label {
+  font-size: 60px; /* Aumentado para 60px */
+  color: #444;
+  padding: 15px; /* Aumentado para 15px */
+  float: right;
+  transition: all 0.2s ease;
+}
+  
+  .star-widget input:not(:checked) ~ label:hover,
+  .star-widget input:not(:checked) ~ label:hover ~ label {
+    color: #fd4;
+  }
+  
+  .star-widget input:checked ~ label {
+    color: #fd4;
+  }
+  
+  #rate-5:checked ~ .star-widget label {
+    color: #fe7;
+    text-shadow: 0 0 30px #952; /* Aumentado para 30px */
+  }
+  
+  form header {
+    font-size: 30px; /* Aumentado para 30px */
+    color: #fe7;
+    font-weight: 600; /* Aumentado para 600 */
+    margin: 10px 0 30px 0; /* Aumentado para 10px no topo e 30px na parte inferior */
+    transition: all 0.2s ease;
+  }
+  
+  form .textarea textarea {
+    height: 150px; /* Aumentado para 150px */
+    width: 100%;
+    outline: none;
+    color: #eee;
+    border: 2px solid #333; /* Aumentado para 2px */
+    background: #222;
+    padding: 15px; /* Aumentado para 15px */
+    font-size: 20px; /* Aumentado para 20px */
+    resize: none;
+  }
+  
+  .form .btn {
+    height: 60px; /* Aumentado para 60px */
+    width: 100%;
+    margin: 20px 0; /* Aumentado para 20px no topo e na parte inferior */
+  }
+  
+  .form .btn button {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #444; /* Aumentado para 2px */
+    outline: none;
+    background: #222;
+    color: #999;
+    font-size: 20px; /* Aumentado para 20px */
+    font-weight: 900; /* Aumentado para 600 */
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .form .btn button:hover {
+    background: #1b1b1b;
+  }
+  
