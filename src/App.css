@@ -1,0 +1,414 @@
+/* Importação das fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif; /* Define a fonte padrão */
+    
+}
+/* Corpo do documento */
+body {
+    background-color: #FEF5E7;
+    height: 100vh;
+}
+
+/* Efeitos de gradiente superior */
+.efeitos-top, .efeitos-bottom {
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(to right, #3F59A6 0%, #3F59A6 25%, #3F59A6 50%, #3F59A6 75%, #3F59A6 100%);
+}
+
+/* Barra de navegação superior */
+.nav-bar-top {
+    width: 100%;
+    height: 95px;
+    padding: 0 50px;
+    background: #254670;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra-pesquisa {
+    font-size: 20px;
+    
+}
+/* Elementos da barra de navegação superior */
+.nav-bar-top-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-top-left .logo a {
+    font-family: "MuseoModerno", sans-serif; /* Define a fonte do logotipo */
+    font-weight: bold;
+    font-size: 42px;
+    color: #FEF5E7;
+    margin-right: 25px;
+}
+
+.nav-bar-top-left .barra-pesquisa .input {
+    border: 1px solid #ffffff;
+    padding: 5px 10px;
+    outline: none;
+    transition: all 0.5s linear;
+}
+
+.nav-bar-top-right ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-bar-top-right ul li {
+    display: inline-block; /* Coloca os itens da lista lado a lado */
+    margin-right: 10px;
+}
+
+.login, .cadastro {
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login {
+    background: #FEF5E7;
+    font-size: 24px;
+}
+
+.cadastro {
+    background: #FEF5E7;
+    font-size: 24px;
+}
+
+.login:hover {
+    background: #2CA7B9;
+}
+
+.cadastro:hover {
+    background: #f58c0c;
+}
+
+.nav-bar-top-right {
+    display: block;
+    padding: 8px 10px;
+    color: #666666;
+}
+
+/* Barra de navegação inferior */
+.nav-bar-bottom {
+    width: 100%;
+    background: #254670;
+    height: 75px;
+    padding: 0 50px;
+}
+
+.nav-bar-bottom ul {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar-bottom ul li a {
+    color: #FEF5E7; 
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 20px;
+    
+}
+
+/* Estilo do banner */
+.banner img{
+    height: 6%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.geral {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 76vh;
+    gap: 17px;
+    margin: 10px;
+
+}
+
+
+.card {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 12%;
+    box-shadow: 4px 4px 12px #aaaa;
+   
+   
+    
+  }
+
+  .card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    height: 50%;
+    margin-bottom:  -20px;
+  }
+  .card h1 {
+    font-size: 2.2rem;
+    margin-bottom:  10px;
+  }
+  .card h2 {
+    font-size: 1.9rem;
+    color: #aaaa;
+    text-align: center;
+    margin-bottom: 0px;
+
+  }
+  .card button {
+    background-color: #2192FF;
+    height: 30px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+  .card button:hover {
+    background-color: #137de8;
+    cursor: pointer;
+  }
+
+
+.intro {
+    margin-top: 8rem;
+    margin-bottom: -10rem;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+
+
+.texto-card1 img, .texto-card2 img, .texto-card3 img, .texto-card4 img {
+    width: 100%; /* Define a largura da imagem como 100% do card */
+    height: 200px; /* Define a altura da imagem */
+    object-fit: cover; /* Garante que a imagem se ajuste ao tamanho do card */
+    
+}
+
+/*.geral {
+    width: 1960px;
+    height: 1080px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}*/
+
+.texto-card1 img, .texto-card2 img, .texto-card3 img, .texto-card4 img {
+    width: 45%; /* Define a largura da imagem como 100% do card */
+    height: 76%; /* Define a altura da imagem */
+    object-fit: cover; /* Garante que a imagem se ajuste ao tamanho do card */
+    
+}
+
+
+.card {
+    width: 450px;
+    height: 750px;
+    padding: 10px 0px;
+    text-align: center;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 2px 5px 15px black;
+    transition: transform 0.3s;
+    margin-right: 40px; 
+    margin-top: 300px;
+    
+}
+
+
+.geral .card:last-child {
+    margin-right: 0; 
+}
+
+.geral .card:hover {
+    transform: scale(1.050);
+}
+
+
+.geral .card .texto-card1 h2 {
+    font-size: 35px;
+    padding-bottom: 15px;
+    color: #000;
+}
+.geral .card .texto-card2 h2 {
+    font-size: 35px;
+    padding-bottom: 15px;
+    color: #000;
+}
+.geral .card .texto-card3 h2 {
+    font-size: 35px;
+    padding-bottom: 15px;
+    color: #000;
+}
+.geral .card .texto-card4 h2 {
+    font-size: 35px;
+    padding-bottom: 15px;
+    color: #000;
+}
+
+.botao-verde a{
+    color: #22fd1a;
+}
+.geral .card p span {
+    font-size: 40px;
+    padding: 0 5px;
+    color:#000;
+}
+
+.geral .card p  {
+    font-size: 18px;
+    padding: 1px 5px;
+    margin-bottom: 20px;
+    color:#888888;
+}
+
+.geral .card .geral-card ul {
+    padding: 10px 30px;
+    padding-bottom: 20px;
+}
+
+.geral .card .geral-card ul li {
+    list-style: none;
+    padding: 10px 0;
+    color:#505050;
+}
+
+.geral .card .geral-card ul li i {
+    margin-right: 4px;
+}
+
+.geral .card .geral-card button {
+    width: 210px;
+    padding: 35px 20px;
+    background: linear-gradient(135deg, #188648 5%, #1EA358 100%);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex; /* Adicionado */
+    align-items: center; /* Adicionado */
+    justify-content: center; /* Adicionado */
+}
+
+.geral .card .geral-card button:hover {
+    background: #17ead9;
+    letter-spacing: 1.2px;
+}
+
+.geral .card .geral-card button a {
+    text-decoration: none;
+    color: #f7f7f7;
+    font-size: 21px;
+    text-align: center;
+}
+
+
+.geral_menu_login, .geral_menu_cadastro {
+    background-color: #254670;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px auto;
+    width:  600px;
+    margin: 200px auto;
+    
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-group label {
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.input-group input {
+    border-radius: 3px;
+    background-color: #808080;
+    height: 40px;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+    color: #fff;
+}
+
+.input-group button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
