@@ -5,9 +5,22 @@ const Cadastro = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleCadastro = (e) => {
+  const handleCadastro = async (e) => {
     e.preventDefault();
-    // lógica para lidar com o cadastro
+
+    const response = await fetch('/api/register', {  // URL apontando para o rewrite configurado no Firebase
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ username, email, password }),
+    });
+
+    if (response.ok) {
+      alert('Cadastro realizado com sucesso!');
+    } else {
+      alert('Falha no cadastro, tente novamente.');
+    }
   };
 
   return (

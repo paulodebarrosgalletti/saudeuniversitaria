@@ -6,7 +6,7 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    const response = await fetch('http://localhost:8081/login', {
+    const response = await fetch('/api/login', { // URL apontando para o rewrite configurado no Firebase
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -24,19 +24,19 @@ const Login = () => {
   };
 
   return (
-    <div class="geral_menu_login">
+    <div className="geral_menu_login">
       <h2>Login</h2>
       <form onSubmit={handleLogin}>
-        <div class="input-group">
+        <div className="input-group">
           <label>Username</label>
           <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} required />
         </div>
-        <div class="input-group">
+        <div className="input-group">
           <label>Password</label>
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
         </div>
-        <div class="input-group">
-        <button type="submit">Login</button>
+        <div className="input-group">
+          <button type="submit">Login</button>
         </div>
       </form>
     </div>
