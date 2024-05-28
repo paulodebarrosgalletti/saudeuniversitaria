@@ -8,7 +8,7 @@ const Cadastro = () => {
   const handleCadastro = async (e) => {
     e.preventDefault();
 
-    const response = await fetch('/api/register', {  // URL apontando para o rewrite configurado no Firebase
+    const response = await fetch('http://localhost:8081/register', { // URL atualizada
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

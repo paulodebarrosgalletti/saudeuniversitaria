@@ -1,3 +1,4 @@
+// Login Component
 import React, { useState } from 'react';
 
 const Login = () => {
@@ -6,7 +7,7 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    const response = await fetch('/api/login', { // URL apontando para o rewrite configurado no Firebase
+    const response = await fetch('http://localhost:8081/login', { // URL atualizada
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
