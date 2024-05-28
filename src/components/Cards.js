@@ -16,7 +16,7 @@ function Cards() {
         <div class="card">
           <div class="texto-card1">
             <h2>Proximidade</h2>
-            <img src={icon1} alt="icon1" />
+            <img class="card-image" src={icon1} alt="icon1" />
           </div>
           <div class="geral-card">
             <p>A um clique de você</p>
@@ -34,7 +34,7 @@ function Cards() {
         <div class="card">
           <div class="texto-card2">
             <h2>Perfil</h2>
-            <img src={icon2} alt="icon2" />
+            <img class="card-image" src={icon2} alt="icon2" />
           </div>
           <div class="geral-card">
             <p>Perfil Compátivel</p>
@@ -52,7 +52,7 @@ function Cards() {
         <div class="card">
           <div class="texto-card3">
             <h2>Interação</h2>
-            <img src={icon3} alt="icon3" />
+            <img class="card-image" src={icon3} alt="icon3" />
           </div>
           <div class="geral-card">
             <p>Sinta-se em casa</p>
@@ -70,7 +70,7 @@ function Cards() {
         <div class="card">
           <div class="texto-card4">
             <h2>Disponibilidade</h2>
-            <img src={icon4} alt="icon4" />
+            <img class="card-image" src={icon4} alt="icon4" />
           </div>
           <div class="geral-card">
             <p>Queremos o seu bem</p>
