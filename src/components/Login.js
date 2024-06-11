@@ -1,13 +1,15 @@
-// Login Component
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { AuthProvider } from './AuthContext';
+import { AuthContext } from './AuthContext';
 
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const { setIsAuthenticated } = useContext(AuthContext);
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    const response = await fetch('http://localhost:8081/login', { // URL atualizada
+    const response = await fetch('http://localhost:8081/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -18,6 +20,7 @@ const Login = () => {
     if (response.ok) {
       const { token } = await response.json();
       localStorage.setItem('token', token);
+      setIsAuthenticated(true);
       alert('Login realizado com sucesso!');
     } else {
       alert('Falha no login, verifique suas credenciais.');

@@ -1,14 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { AuthProvider } from './AuthContext';
+import { AuthContext } from './AuthContext';
 
 const Cadastro = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const { setIsAuthenticated } = useContext(AuthContext);
 
   const handleCadastro = async (e) => {
     e.preventDefault();
 
-    const response = await fetch('http://localhost:8081/register', { // URL atualizada
+    const response = await fetch('http://localhost:8081/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -18,6 +21,7 @@ const Cadastro = () => {
 
     if (response.ok) {
       alert('Cadastro realizado com sucesso!');
+      setIsAuthenticated(true);
     } else {
       alert('Falha no cadastro, tente novamente.');
     }

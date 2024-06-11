@@ -714,3 +714,140 @@ h3.desc {
     transform: scale(103%);
 }
 
+/* Adicione estes estilos ao seu arquivo CSS */
+
+.doctor-registration-form {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.doctor-registration-input-group {
+  margin-bottom: 15px;
+}
+
+.doctor-registration-input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.doctor-registration-input-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #1EA358;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #155d27;
+}
+
+.health-icon {
+  width: 24px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.profile-img {
+  width: 120px;
+  border-radius: 50%;
+  border: #1EA358 5px solid;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transform: translateY(-65px);
+}
+
+
+.container22 {
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 20vh;
+  gap: 27px;
+  margin: 30px;
+
+}
+
+
+.card22 {
+    width: 300px;
+    height: 20vh;
+    padding: 0px 0px;
+    text-align: center;
+    background: #254670;
+    border-radius: 15px;
+    box-shadow: 2px 5px 15px black;
+    transition: transform 0.3s;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    
+}
+
+
+
+.profile-img {
+    width: 120px;
+    border-radius: 50%;
+    border: #1EA358 5px solid;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: translateY(-65px);
+}
+
+.container-text2 {
+    margin-top: -35px;
+    color: #FEF5E7;
+}
+
+h1.name {
+    margin: 0;
+    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 20px;
+}
+
+h3.desc {
+    font-weight: 400;
+    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 14px;
+}
+
+.address-icon {
+   margin-top: -10px;
+    width: 24px;
+    filter: brightness(15);
+}
+
+
+.contact input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #45a049;
+}

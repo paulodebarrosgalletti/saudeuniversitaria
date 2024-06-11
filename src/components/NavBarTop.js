@@ -1,7 +1,21 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, useNavigate } from 'react-router-dom'; // Atualize aqui para importar useNavigate
+import { AuthProvider } from './AuthContext';
+import { AuthContext } from './AuthContext';
 
 function NavBarTop() {
+  const { isAuthenticated, logout } = useContext(AuthContext);
+  const navigate = useNavigate(); // Atualize aqui para usar useNavigate
+
+  const handleLogout = () => {
+    logout();
+    navigate('/login'); // Atualize aqui para usar navigate
+  };
+
+  const handleAccess = () => {
+    navigate('/choose-role'); // Atualize aqui para usar navigate
+  };
+
   return (
     <div className="nav-bar-top">
       <div className="nav-bar-top-left">
@@ -12,8 +26,18 @@ function NavBarTop() {
       </div>
       <div className="nav-bar-top-right">
         <ul>
-          <li><button className="login"><Link to="/login">LOGIN</Link></button></li>
-          <li><button className="cadastro"><Link to="/cadastro">CADASTRO</Link></button></li>
+          {isAuthenticated ? (
+            <>
+              <li><div className="avatar">👤</div></li>
+              <li><button className="acessar" onClick={handleAccess}>Acessar</button></li>
+              <li><button className="logout" onClick={handleLogout}>Sair</button></li>
+            </>
+          ) : (
+            <>
+              <li><button className="login"><Link to="/login">LOGIN</Link></button></li>
+              <li><button className="cadastro"><Link to="/cadastro">CADASTRO</Link></button></li>
+            </>
+          )}
         </ul>
       </div>
     </div>
