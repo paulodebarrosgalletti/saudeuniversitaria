@@ -269,6 +269,23 @@ body {
     
 }
 
+.choose-role {
+  background-color: #254670;
+  align-items: center;
+  display: flex;
+  padding: 50px 400px;
+  margin-top: 10px;
+  margin: 50px;
+  border-radius: 50px;
+
+}
+.choose-role button{
+  margin: 50px;
+
+}
+.choose-role h2{
+  color: #f1f7f5;
+}
 
 .geral .card:last-child {
     margin-right: 0; 
