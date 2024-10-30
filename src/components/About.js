@@ -50,7 +50,7 @@ function About() {
 
             <div className="container-text2">
                 <h1 className="name">
-                    Cristhian
+                Bianca Keller
                 </h1>
 
                 <h3 className="desc">
@@ -82,7 +82,7 @@ function About() {
 
             <div className="container-text2">
                 <h1 className="name">
-                    Natalia
+                Marcus Vinicius
                 </h1>
 
                 <h3 className="desc">
@@ -114,39 +114,7 @@ function About() {
 
             <div className="container-text2">
                 <h1 className="name">
-                    Joao
-                </h1>
-
-                <h3 className="desc">
-                    lore lore lore <b>lore</b> <br />
-                    lore lore llore<br /><br />
-
-                    <img src={endereco} alt="Ícone de endereço" className="address-icon" /> São Paulo, São Paulo - ZO
-                </h3>
-            </div>
-
-            <div className="socials">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    <img src={github} alt="Ícone do GitHub" />
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    <img src={instagram} alt="Ícone do Instagram" />
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    <img src={likdin} alt="Ícone do LinkedIn" />
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    <img src={youtube} alt="Ícone do YouTube" />
-                </a>
-            </div>
-        </div>
-        <div className="card2">
-
-            <img src={teste} alt="Foto de perfil" className="profile-img" />
-
-            <div className="container-text2">
-                <h1 className="name">
-                    Renata
+                Raíssa Martins
                 </h1>
 
                 <h3 className="desc">
